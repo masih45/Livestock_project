@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="task4a.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:task4a"
+    xmlns:Pages ="clr-namespace:task4a.Pages"
+    Shell.FlyoutBehavior="Disabled"
+    Title="task4a">
+
+    <!--     xmlns:Pages ="clr-namespace:task4a.Pages"  this needs to be added 
+    or the pages will not be able to be accessed-->
+    
+    <TabBar>
+        <!-- Navigation bar -->
+        <Tab Title="Home" Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate Pages:Home}"/>
+        </Tab>
+        <Tab Title="Cow Table" Icon="cow.png">
+            <ShellContent ContentTemplate="{DataTemplate Pages:CowTable}"/>
+        </Tab>
+        <Tab Title="Sheep Table" Icon="sheep.png">
+            <ShellContent ContentTemplate="{DataTemplate Pages:SheepTable}"/>
+        </Tab>
+        <Tab Title="Calculate Income and Proffit" Icon="money.png">
+            <ShellContent ContentTemplate="{DataTemplate Pages:CalculateIncomeAndProfit}"/>
+        </Tab>
+        <Tab Title="Livestock Query" Icon="query.png">
+            <ShellContent ContentTemplate="{DataTemplate Pages:LivestockQuery}"/>
+        </Tab>
+        <Tab Title="Insert Record" Icon="insert.png">
+            <ShellContent ContentTemplate="{DataTemplate Pages:InsertRecord}"/>
+        </Tab>
+        <Tab Title="Delete Record" Icon="delete.png">
+            <ShellContent ContentTemplate="{DataTemplate Pages:DeleteRecord}"/>
+        </Tab>
+        <Tab Title="Update Record" Icon="update.png">
+            <ShellContent ContentTemplate="{DataTemplate Pages:UpdateRecord}"/>
+        </Tab>
+        
+    </TabBar>
+
+</Shell>

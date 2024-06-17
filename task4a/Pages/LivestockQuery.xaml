@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="task4a.Pages.LivestockQuery"
+             Title="Livestock Query">
+   
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Livestock Query:" FontAttributes="Bold" />
+
+            <Label Text="Enter livestock type (cow/sheep):" />
+            <Entry x:Name="LivestockTypeEntry" Placeholder="Enter livestock type" />
+
+            <Label Text="Enter livestock color (all/black/red/white):" />
+            <Entry x:Name="LivestockColorEntry" Placeholder="Enter livestock color" />
+
+            <Button Text="Query Livestock" Clicked="OnQueryLivestockClicked" />
+
+            <Label x:Name="LabelQueryResult" TextColor="Black" />
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

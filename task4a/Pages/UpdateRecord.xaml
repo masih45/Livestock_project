@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="task4a.Pages.UpdateRecord"
+             Title="UpdateRecord">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Update Record:" FontAttributes="Bold" />
+
+            <Label Text="Enter ID of the record to update:" />
+            <Entry x:Name="IdEntry" Placeholder="Enter ID" Keyboard="Numeric" />
+
+            <Label Text="Enter new cost (optional):" />
+            <Entry x:Name="CostEntry" Placeholder="Enter new cost" Keyboard="Numeric" />
+
+            <Label Text="Enter new weight (optional):" />
+            <Entry x:Name="WeightEntry" Placeholder="Enter new weight" Keyboard="Numeric" />
+
+            <Label Text="Enter new colour (optional):" />
+            <Entry x:Name="ColourEntry" Placeholder="Enter new colour" />
+
+            <Label Text="Enter new produce (optional):" />
+            <Entry x:Name="ProduceEntry" Placeholder="Enter new produce" Keyboard="Numeric" />
+
+            <Button Text="Update Record" Clicked="OnUpdateRecordClicked" />
+
+            <Label x:Name="LabelOutput" TextColor="Black" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

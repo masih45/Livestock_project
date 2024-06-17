@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="task4a.Pages.DeleteRecord"
+             Title="Delete Record">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Delete Record:" FontAttributes="Bold" />
+
+            <Label Text="Enter ID of the record to delete:" />
+            <Entry x:Name="IdEntry" Placeholder="Enter ID" Keyboard="Numeric" />
+
+            <Button Text="Delete Record" Clicked="OnDeleteRecordClicked" />
+
+            <Label x:Name="LabelOutput" TextColor="Black" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

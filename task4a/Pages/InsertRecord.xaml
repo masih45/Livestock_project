@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="task4a.Pages.InsertRecord"
+             Title="Insert Record">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Insert Records:" FontAttributes="Bold" />
+
+            <Label Text="Enter table name (cow/sheep):" />
+            <Entry x:Name="TableNameEntry" Placeholder="Enter table name" />
+
+            <Label Text="Enter cost:" />
+            <Entry x:Name="CostEntry" Placeholder="Enter cost" Keyboard="Numeric" />
+
+            <Label Text="Enter weight:" />
+            <Entry x:Name="WeightEntry" Placeholder="Enter weight" Keyboard="Numeric" />
+
+            <Label Text="Enter colour:" />
+            <Entry x:Name="ColourEntry" Placeholder="Enter colour" />
+
+            <Label Text="Enter produce amount:" />
+            <Entry x:Name="ProduceEntry" Placeholder="Enter produce amount" Keyboard="Numeric" />
+
+            <Button Text="Insert Record" Clicked="OnInsertRecordClicked" />
+
+            <Label x:Name="LabelOutput" TextColor="Black" />
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

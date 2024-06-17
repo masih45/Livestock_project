@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="task4a.Pages.Home"
+             Title="Home">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+            <!-- Spacer for adding gap -->
+            <BoxView
+        HeightRequest="20" 
+        BackgroundColor="White"/>
+
+            <!-- 1st heading -->
+            <Label
+        Text="Welcome to the Livestock Managment Systems app!"
+        Style="{StaticResource Headline}"
+        SemanticProperties.HeadingLevel="Level1" />
+
+            <!-- Livestock image -->
+            <Image
+        Source="livestock.png"
+        HeightRequest="185"
+        Aspect="AspectFit"
+        SemanticProperties.Description="Animal image with the caption: Livestoc Managment System" />
+
+            <!-- 2nd heading under image -->
+            <Label
+        Text="How much do your animals cost you?"
+        Style="{StaticResource SubHeadline}"
+        SemanticProperties.HeadingLevel="Level2" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

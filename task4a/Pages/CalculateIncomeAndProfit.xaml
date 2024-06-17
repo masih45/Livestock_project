@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="task4a.Pages.CalculateIncomeAndProfit"
+             Title="Calculate Income And Profit">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Livestock statistics:" FontAttributes="Bold" />
+            <Label x:Name="LabelGovernmentTax" />
+            <Label x:Name="LabelFarmDailyProfit" />
+            <Label x:Name="LabelAverageWeight" />
+
+            <BoxView HeightRequest="20" Color="Transparent" />
+            
+            <Label Text="Based on current livestock data:" FontAttributes="Bold" />
+            <Label x:Name="LabelAverageCowProfit" />
+            <Label x:Name="LabelAverageSheepProfit" />
+            <Label x:Name="LabelCurrentDailySheepProfit" />
+            <Label x:Name="LabelCurrentDailyCowProfit" />
+
+            <BoxView HeightRequest="20" Color="Transparent" />
+            
+            <Label Text="== Estimate Future Investments ==" FontAttributes="Bold" />
+            <StackLayout x:Name="EstimateInvestmentsLayout">
+                <Label Text="Enter livestock type (Cow/Sheep):" />
+                <Entry x:Name="LivestockTypeEntry" Placeholder="Enter livestock type (Cow/Sheep)" />
+
+                <Label Text="Enter investment quantity:" />
+                <Entry x:Name="QuantityEntry" Placeholder="Enter quantity" Keyboard="Numeric" />
+
+                <Button Text="Estimate Investment"
+                    Clicked="OnEstimateInvestmentsClicked" />
+
+                <Label x:Name="LabelInvestmentResult" TextColor="Red" />
+
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
