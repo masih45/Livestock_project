@@ -5,7 +5,9 @@ The Livestock Management System (LMS) app is a C# and .NET MAUI application desi
 Features
 1. Data Modelling and Display
 Database Connection: Establish a connection to the SQLite database.
-Class Modelling: Create classes to represent the Cow and Sheep tables.
+Class Modelling: Create classes to represent the Cow and Sheep tables.![Screenshot 2024-06-27 184308](https://github.com/masih45/Livestock_project/assets/164842757/aa7a1bb1-8ae8-4abc-8faa-b8eaa8a3febd)
+![Screenshot 2024-06-27 184241](https://github.com/masih45/Livestock_project/assets/164842757/947d7222-87e1-4078-863f-58b9c523e17a)
+
 Data Loading: Load table rows as objects into data structures.
 Data Display: Show all livestock records in a columnar format.
 2. Livestock Statistics and Profit Forecasting
